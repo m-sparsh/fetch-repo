@@ -1,19 +1,13 @@
-import React , { useState, useEffect} from 'react';
-import { Form, Card, Image, Icon } from 'semantic-ui-react';
-
+import React from 'react';
 import './App.css';
-import axios from 'axios';
-import SearchBar from './components/SearchBar';
+import SearchBox from './components/SearchBox';
+import Header from './components/Header';
 
 function App() {
-
-
-
 return (
-    <div className="App">
-    <h1>Repo Search</h1>
-    <SearchBar />
-    
+    <div id="particles-js">
+    <Header />
+    <SearchBox />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import Results from './Results';
 
-const SearchBar = () => {
+const SearchBox = () => {
 
   const [searchInput, setSearchInput] = useState('');
   const [repos, setRepos] = useState([]);
@@ -11,7 +11,6 @@ const SearchBar = () => {
     setSearchInput(e.target.value);
   }
   const handleClick = async () => {
-      console.log(searchInput);
 
       try {
           const result = await axios(`https://api.github.com/users/${searchInput}/repos`
@@ -29,15 +28,18 @@ const SearchBar = () => {
  
     return (
         <>
-         <div className="navbar">
-         <div className="search">
-      <input typr="text" placeholder="search" value={searchInput} onChange={handleChange} />
-      <button onClick={handleClick}>Search</button>
-      </div>
-    </div>
-    <Results repos={repos} />
+        <div className="search">
+        <nav className="navbar navbar-light bg-light form-inline">
+     <input className="form-control mr-sm-2" value={searchInput} onChange={handleChange} type="search" placeholder="Search" aria-label="Search" />
+    <button className="btn btn-outline-success my-2 my-sm-0" onClick={handleClick} type="search">Search</button>
+        </nav>
+        </div>
+        
+         <Results repos={repos} />
+         
     </>
     );
 };
 
-export default SearchBar;
+export default SearchBox;
+
