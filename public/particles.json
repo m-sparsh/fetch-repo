@@ -31,7 +31,14 @@
         },
         "interactivity":{
             "detect_on":"window"
-        }
+        },
+        "line_linked": {
+      "enable": true,
+      "distance": 300,
+      "color": "#f8f9fa",
+      "opacity": 0.4,
+      "width": 2
+    }
 
     }
 }
