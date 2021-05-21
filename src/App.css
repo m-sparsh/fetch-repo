@@ -1,23 +1,4 @@
 .App{
-  align:center;
-}
-.header{
-  padding:20px;
-  background-color: #34626c;
-  color: #cfd3ce;
-  font-family: 'Oswald', sans-serif;
-}
-.search{
-  possition: relative;
-  display: flex;
-  margin: 30px 50px;
-  width:50%;
-}
-
-
-.list{
-  position:relative;
-  width:30%;
-  margin:50px;
   text-align:center;
+  background:#f8f9fa;
 }

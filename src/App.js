@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import SearchBox from './components/SearchBox';
-import Header from './components/Header';
+import Searchbox from './components/Searchbox/Searchbox.js';
+import Header from './components/Header/Header.js';
+import Layout from './hoc/Layout.js';
 
-function App() {
-return (
-    <div id="particles-js">
-    <Header />
-    <SearchBox />
-    </div>
+class App extends Component {
+
+  render(){
+     return (
+    <Layout>
+         <Header />
+         <Searchbox />
+    </Layout>
   );
+  }
 }
 
 export default App;
