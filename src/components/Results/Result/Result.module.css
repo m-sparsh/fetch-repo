@@ -22,20 +22,3 @@
     width:auto;
     text-align:center;
 }
-.list{
-    box-sizing:border-box;
-    background:#f8f9fa;
-    width:100%;
-    margin:0 auto;
-}
-.list ul{
-    
-    align-items:center;
-    list-style-type:none;
-}
-.list ul li {
-    text-align:center;
-    font-size:1.5rem;
-    padding:10px;
-    
-}
